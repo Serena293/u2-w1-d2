@@ -8,10 +8,10 @@ body {
   background-position: center center;
 }
 
-* {
-  box-sizing: border-box;
-}
 
+#nome-data {
+  opacity: 0.4;
+}
 hr {
   display: none;
 } /* rimuove l'elemento */
@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -33,6 +37,21 @@ header {
   header {
     padding: 1em;
   }
+
+  #underline-img{opacity: 0.4;}
+* {
+  box-sizing: border-box;
+}
+main article{position: relative;}
+.imgLeft{float: left;}
+#underline-img {
+  width: 50%;
+  position: absolute;
+  top: 55px;
+  right: 145px;
+  /* transform: translate(0%, -20%); */
+  opacity: 0.4;
+}
 }
 
 @media screen and (max-width: 1199px) {
@@ -145,8 +164,85 @@ h1 + p {
   }
 
   h2 {
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  main article {
+    position: relative;
+  }
+
+  header nav ul li a,
+  header p {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #underline-img {
+    width: 40%;
+  
+    position: absolute;
+    top: 140px;
+    /* transform: translate(0%, -20%); */
+    opacity: 0.4;
+  }
+
+  #nome-data {
+    opacity: 0.4;
+  }
+
+  .imgLeft {
+    float: left;
+  }
+
+  section {
+    position: relative;
+  }
+  #novità {
+    width: 40%;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+  }
+  .fa-tag {
+    opacity: 0.1;
+    font-size: 60px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  aside div {
+    position: relative;
+  }
+  footer {
+    position: relative;
+  }
+
+  /* footer div{ 
+  border: 2px solid white;
+  width: 50px;
+  padding: 0.5em;
+  height: 50px;
+  background-color: white;
+  opacity: 0.2;
+} */
+ .icona{border: 2px solid white;
+width: 50px;
+height: 50px;
+padding: 0.5em;
+margin-bottom: 1em;
+/* position: absolute;
+right:10px */
+}
+
+.fa-plus{
+
+ 
+  }
+
+  .fa-calendar-alt{
+  
   }
 }
 
@@ -295,6 +391,7 @@ button {
   button {
     padding: 15px 30px;
   }
+
 }
 
 /* ELEMENTI NELL' ASIDE */
@@ -329,7 +426,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
